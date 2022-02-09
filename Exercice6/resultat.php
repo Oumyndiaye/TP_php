@@ -17,17 +17,14 @@
             validChamp($a);
             validChamp($b);
             validChamp($c);
-            secondegre($a,$b,$c);
+            secondegre($a,$b,$c); 
         ?>
             <a href="index.php">Retour</a>
         <?php }
          else{
             header('location:index.php');
-        } 
-
-        
-        ?>
-                
+        }      
+        ?>        
     </body>
 </html>
 
