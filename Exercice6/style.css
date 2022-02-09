@@ -1,0 +1,27 @@
+label{
+    display: block;
+}
+body{
+    background-image: url("flower.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:gray;
+    height: 50vh;
+    width: 35vw;
+    border-radius: 1em;
+    font-size: 2em;
+    }
+#Entrer_a,
+#Entrer_b,
+    #Entrer_c,input[type="submit"]{
+    background-color:gray;
+    height: 5vh;
+}

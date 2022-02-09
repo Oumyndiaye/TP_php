@@ -1,0 +1,42 @@
+<?php
+function bissectile($Y): bool
+{
+    return (($Y % 4 == 0 && $Y % 100 !== 0) || ($Y % 400 == 0)) ? true : false;
+}
+function affichenbrejr($m, $Y)
+{
+    if ($m==2){
+        if(bissectile($Y)){
+        $nbre_jr=29;
+
+        }
+        else{
+            $nbre_jr =28;
+        }
+    }
+    elseif ($m == 4 || $m == 6 || $m == 9 || $m == 11) {
+        $nbre_jr = 30;
+    } else{
+        $nbre_jr = 31;
+    }
+    return $nbre_jr;
+}
+function validitedate($j, $m, $Y)
+{
+    
+     return ($j >= 1 && $j <= affichenbrejr($m, $Y)) ? true:false;
+}
+?>
+<?php
+$j=29;
+$m=32;
+$a=2019;
+if (validitedate($j,$m,$a)) {
+    echo "ok";
+}
+else {
+    echo "ko";
+}
+
+
+?>
